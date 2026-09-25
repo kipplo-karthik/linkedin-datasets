@@ -2,7 +2,7 @@
 
 Field documentation for Kipplo's three LinkedIn datasets: companies, professional profiles and job postings.
 
-**[Explore the full LinkedIn datasets on Kipplo](https://www.kipplo.com/datasets/linkedin-datasets/?utm_source=github&utm_medium=repo&utm_campaign=linkedin-datasets)**
+**[Explore the full LinkedIn datasets on Kipplo](https://www.kipplo.com/datasets/linkedin-datasets/)**
 
 *Note: This repository is maintained independently by Karthik V from Kipplo's marketing team and is not an official Kipplo repository.*
 
@@ -32,9 +32,9 @@ Kipplo offers three:
 
 | Dataset | Records | Fields | One row is | Record key |
 |---|---|---|---|---|
-| [LinkedIn Company Dataset](https://www.kipplo.com/datasets/linkedin-company-dataset/?utm_source=github&utm_medium=repo&utm_campaign=linkedin-datasets) | 60M+ | 73 | a company | `company_domain` |
-| [LinkedIn Profile Dataset](https://www.kipplo.com/datasets/linkedin-profile-dataset/?utm_source=github&utm_medium=repo&utm_campaign=linkedin-datasets) | 250M+ | 73 | a professional | `linkedin_url` |
-| [LinkedIn Job Posting Dataset](https://www.kipplo.com/datasets/linkedin-jobs-dataset/?utm_source=github&utm_medium=repo&utm_campaign=linkedin-datasets) | 10M+ | 34 | a job posting | `job_posting_id` |
+| [LinkedIn Company Dataset](https://www.kipplo.com/datasets/linkedin-company-dataset/) | 60M+ | 73 | a company | `company_domain` |
+| [LinkedIn Profile Dataset](https://www.kipplo.com/datasets/linkedin-profile-dataset/) | 250M+ | 73 | a professional | `linkedin_url` |
+| [LinkedIn Job Posting Dataset](https://www.kipplo.com/datasets/linkedin-jobs-dataset/) | 10M+ | 34 | a job posting | `job_posting_id` |
 
 ## How the datasets connect
 
@@ -81,7 +81,7 @@ Firmographic data for 60M+ companies worldwide: one row per company domain. Ever
 
 **Common uses:** sizing an addressable market from real records, mapping an industry and benchmarking its players, reading hiring and team composition, and building research tools, dashboards and enrichment pipelines on top of the data.
 
-**[See the LinkedIn Company Dataset](https://www.kipplo.com/datasets/linkedin-company-dataset/?utm_source=github&utm_medium=repo&utm_campaign=linkedin-datasets)**
+**[See the LinkedIn Company Dataset](https://www.kipplo.com/datasets/linkedin-company-dataset/)**
 
 ---
 
@@ -118,7 +118,7 @@ Firmographic data for 60M+ companies worldwide: one row per company domain. Ever
 
 **Common uses:** building outbound lists by seniority, function and country; finding candidates by title, seniority and department; and sizing a market by counting the real number of people in a role and region.
 
-**[See the LinkedIn Profile Dataset](https://www.kipplo.com/datasets/linkedin-profile-dataset/?utm_source=github&utm_medium=repo&utm_campaign=linkedin-datasets)**
+**[See the LinkedIn Profile Dataset](https://www.kipplo.com/datasets/linkedin-profile-dataset/)**
 
 ---
 
@@ -153,12 +153,12 @@ A bulk dataset of 10M+ job listings published on LinkedIn, active and closed, fr
 
 **Common uses:** spotting companies that are expanding their teams, tracking demand by role and market over time, mapping which employers compete for the same talent, building recruiting and market-intelligence products, and extracting the tools and platforms named in job descriptions as adoption signals.
 
-**[See the LinkedIn Job Posting Dataset](https://www.kipplo.com/datasets/linkedin-jobs-dataset/?utm_source=github&utm_medium=repo&utm_campaign=linkedin-datasets)**
+**[See the LinkedIn Job Posting Dataset](https://www.kipplo.com/datasets/linkedin-jobs-dataset/)**
 
 ---
 
 ## Full datasets
 
-**[Explore the full LinkedIn datasets on Kipplo](https://www.kipplo.com/datasets/linkedin-datasets/?utm_source=github&utm_medium=repo&utm_campaign=linkedin-datasets)**
+**[Explore the full LinkedIn datasets on Kipplo](https://www.kipplo.com/datasets/linkedin-datasets/)**
 
-Data from [Kipplo](https://www.kipplo.com/?utm_source=github&utm_medium=repo&utm_campaign=linkedin-datasets), a B2B data platform for growth teams.
+Data from [Kipplo](https://www.kipplo.com/), a B2B data platform for growth teams.
