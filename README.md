@@ -1,6 +1,6 @@
 # LinkedIn Datasets
 
-Field documentation for Kipplo's three LinkedIn datasets: companies, professional profiles and job postings.
+An overview of Kipplo's LinkedIn datasets, including the Company, Profile and Job Posting datasets, covering the fields, filters and access options for each.
 
 **[Explore the full LinkedIn datasets on Kipplo](https://www.kipplo.com/datasets/linkedin-datasets/)**
 
@@ -14,9 +14,9 @@ A Kipplo LinkedIn dataset is a ready-built table of company profiles, people pro
 
 Kipplo offers three:
 
-- **LinkedIn Company Dataset:** one row per company, with its size, industry, location, technology stack, funding, team composition and open roles
-- **LinkedIn Profile Dataset:** one row per person at work, with their job title, seniority, department, employer and location, plus any work email and direct dial Kipplo holds for them
-- **LinkedIn Job Posting Dataset:** one row per job posting, active or closed, showing who is hiring, for what role, where, and at what pay
+- **LinkedIn Company Dataset:** one row per company, with its size, industry, location, technology stack, funding, team composition, open roles and more
+- **LinkedIn Profile Dataset:** one row per person at work, with their job title, seniority, department, employer and location, plus a work email and direct dial where available, and more
+- **LinkedIn Job Posting Dataset:** one row per job posting, active or closed, showing who is hiring, for what role, where, at what pay and more
 
 | Detail | Value |
 |---|---|
@@ -25,6 +25,7 @@ Kipplo offers three:
 | Refresh | Continuous |
 | Formats | CSV, XLSX, JSON, XML, SQL |
 | Access | Data Explorer, API, cloud delivery on request |
+| Data dictionaries | [Company](https://www.kipplo.com/datasets/linkedin-company-dataset/data-dictionary/), [Profile](https://www.kipplo.com/datasets/linkedin-profile-dataset/data-dictionary/), [Job Posting](https://www.kipplo.com/datasets/linkedin-jobs-dataset/data-dictionary/) (CSV) |
 
 ---
 
@@ -35,12 +36,6 @@ Kipplo offers three:
 | [LinkedIn Company Dataset](https://www.kipplo.com/datasets/linkedin-company-dataset/) | 60M+ | 73 | a company | `company_domain` |
 | [LinkedIn Profile Dataset](https://www.kipplo.com/datasets/linkedin-profile-dataset/) | 250M+ | 73 | a professional | `linkedin_url` |
 | [LinkedIn Job Posting Dataset](https://www.kipplo.com/datasets/linkedin-jobs-dataset/) | 10M+ | 34 | a job posting | `job_posting_id` |
-
-## How the datasets connect
-
-- **Profile to Company:** every profile row carries the person and their employer together, and the Profile Dataset joins onto the Company Dataset by company domain
-- **Job Posting to Company:** `company_linkedin_url` on each posting is the join key to the Company Dataset
-- Used together, they support prospecting, account-based marketing, talent and research workflows
 
 ---
 
@@ -61,23 +56,9 @@ Firmographic data for 60M+ companies worldwide: one row per company domain. Ever
 | Team composition (14) | employees by function: `engineer_role_count`, `devops_role_count`, `it_role_count`, `security_role_count`, `network_infrastructure_role_count`, `qa_role_count`, `mobile_dev_role_count`, `ios_dev_role_count`, `android_dev_role_count`, `sales_role_count`, `business_development_role_count`, `marketing_role_count`, `customer_success_role_count`, `operations_role_count` |
 | Hiring signals (12) | open vacancies by function: `account_executive_open_roles_count`, `business_development_open_roles_count`, `customer_success_open_roles_count`, `demand_generation_open_roles_count`, `devops_open_roles_count`, `grc_open_roles_count`, `it_open_roles_count`, `marketing_open_roles_count`, `network_infrastructure_open_roles_count`, `operations_open_roles_count`, `sales_open_roles_count`, `security_open_roles_count` |
 
-**Selected definitions**
+**[Download the full data dictionary (CSV)](https://www.kipplo.com/datasets/linkedin-company-dataset/data-dictionary/)**: all 73 fields with type and description
 
-| Field | Definition |
-|---|---|
-| `company_domain` | Primary web domain, and the key for each record |
-| `industry` | Normalised industry label |
-| `linkedin_industry` | Industry label as LinkedIn reports it, before normalisation |
-| `employee_on_linkedin` | Employees with a profile listing the company |
-| `employee_on_linkedin_growth_rate` | Change in that employee count over the trailing period |
-| `revenue_range` | Estimated annual revenue band |
-| `company_hq_country` | Country of the registered headquarters |
-| `company_country` | Country of the primary listed location |
-| `monthly_google_adspend` | Estimated monthly Google Ads spend, in USD |
-| `*_role_count` | Employees in that function with a profile listing the company |
-| `*_open_roles_count` | Open vacancies counted in that function |
-
-**Filters:** 60, including headcount, revenue, industry, NAICS and SIC codes, HQ location, technology, funding, website traffic, open roles and team composition.
+**Narrow it down before you buy:** find exactly the companies you need with 60 filters in Data Explorer, grouped into company, company location, classification, technology, funding, traffic, open roles and team composition. Filtering and previewing are free.
 
 **Common uses:** sizing an addressable market from real records, mapping an industry and benchmarking its players, reading hiring and team composition, and building research tools, dashboards and enrichment pipelines on top of the data.
 
@@ -104,17 +85,9 @@ Firmographic data for 60M+ companies worldwide: one row per company domain. Ever
 | Open roles (12) | open roles by function, from `it_open_roles_count` to `security_open_roles_count` |
 | Funding (6) | `lead_investors`, `total_funding_amount`, `last_funding_amount`, `last_funding_date`, `funding_round_num_investors`, `last_funding_type` |
 
-**Selected definitions**
+**[Download the full data dictionary (CSV)](https://www.kipplo.com/datasets/linkedin-profile-dataset/data-dictionary/)**: all 73 fields with type and description
 
-| Field | Definition |
-|---|---|
-| `linkedin_url` | Canonical profile URL, and the stable key for matching |
-| `seniority` | Normalised seniority tier |
-| `department` | Normalised function |
-| `email_status` | Deliverability status of the business email |
-| `cell_phone` | Direct dial, where a validated number exists |
-
-**Filters:** 64, across person, contact, location, company, classification, technology, open roles, funding and traffic.
+**Narrow it down before you buy:** find exactly the people you need with 64 filters in Data Explorer, grouped into person, contact, person location, company, company location, classification, technology, open roles, funding and traffic. Filtering and previewing are free.
 
 **Common uses:** building outbound lists by seniority, function and country; finding candidates by title, seniority and department; and sizing a market by counting the real number of people in a role and region.
 
@@ -138,18 +111,9 @@ A bulk dataset of 10M+ job listings published on LinkedIn, active and closed, fr
 | Role attributes (7) | `formatted_employment_status`, `formatted_experience_level`, `work_remote_allowed`, `job_functions`, `formatted_job_functions`, `industries`, `formatted_industries` |
 | Posting identifiers (5) | `job_posting_id`, `job_posting_url`, `company_apply_url`, `original_posted_time`, `job_state` |
 
-**Selected definitions**
+**[Download the full data dictionary (CSV)](https://www.kipplo.com/datasets/linkedin-jobs-dataset/data-dictionary/)**: all 34 fields with type and description
 
-| Field | Definition |
-|---|---|
-| `job_posting_id` | Identifier for the posting, and the stable key for the table |
-| `company_linkedin_url` | Company LinkedIn profile URL, and the join key to the Company Dataset |
-| `listed_at` | When the listing was most recently seen live |
-| `original_posted_time` | When the posting first went live |
-| `job_state` | Current state of the listing, such as active or closed |
-| `formatted_experience_level` | Seniority the employer asked for, such as mid-senior level |
-
-**Filters:** 10, across the role, the hiring company and its headquarters.
+**Narrow it down before you buy:** find exactly the postings you need with 10 filters in Data Explorer, grouped into the role, the hiring company and the company HQ. Filtering and previewing are free.
 
 **Common uses:** spotting companies that are expanding their teams, tracking demand by role and market over time, mapping which employers compete for the same talent, building recruiting and market-intelligence products, and extracting the tools and platforms named in job descriptions as adoption signals.
 
